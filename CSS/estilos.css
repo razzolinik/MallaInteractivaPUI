@@ -157,3 +157,13 @@ h1 {
   background-color: #4a148c;
   transform: rotate(-12deg);
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #880e4f;
+  background-color: #ffe4ec;
+  border-top: 1px solid #f48fb1;
+  margin-top: 40px;
+}
