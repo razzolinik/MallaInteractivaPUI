@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva - Programador Universitario en Informática</title>
+  <meta name="description"
+    content="Explora la malla curricular interactiva de la carrera Programador Universitario en Informática. Visualiza correlativas por módulo y desbloquea asignaturas al aprobar." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/estilos.css" />
+</head>
+
+<body>
+  <h1>Programador Universitario en Informática</h1>
+  <button onclick="reiniciarProgreso()" class="reiniciar-btn">Reiniciar malla</button>
+  <div id="contador" class="contador-box">
+    Regulares: <span id="count-regular">0</span> |
+    Aprobadas: <span id="count-aprobado">0</span>
+  </div>
+
+  <div class="malla-grid">
+    <!-- Primer Año -->
+    <div class="modulo" id="modulo1">
+      <h2>1er Módulo</h2>
+      <div class="asignatura" id="alg1">Elementos de Álgebra (anual)</div>
+      <div class="asignatura" id="fund_prog">Fundamentos de la Programación</div>
+      <div class="asignatura" id="ingles1">Inglés I</div>
+      <div class="asignatura" id="lab1">Laboratorio I</div>
+      <div class="asignatura" id="logica">Lógica</div>
+    </div>
+
+
+    <div class="modulo" id="modulo2">
+      <h2>2do Módulo</h2>
+      <div class="asignatura bloqueado" id="alg2">Elementos de Álgebra (anual)</div>
+      <div class="asignatura bloqueado" id="ingles2">Inglés II</div>
+      <div class="asignatura bloqueado" id="lab2">Laboratorio II</div>
+      <div class="asignatura bloqueado" id="prog1">Programación I</div>
+    </div>
+
+    <!-- Segundo Año -->
+    <div class="modulo" id="modulo3">
+      <h2>3er Módulo</h2>
+      <div class="asignatura bloqueado" id="bdd">Base de Datos</div>
+      <div class="asignatura bloqueado" id="lab3">Laboratorio III</div>
+      <div class="asignatura bloqueado" id="org">Organización del Computador</div>
+      <div class="asignatura bloqueado" id="prog2">Programación II</div>
+    </div>
+
+    <div class="modulo" id="modulo4">
+      <h2>4to Módulo</h2>
+      <div class="asignatura bloqueado" id="arquitectura">Arquitectura del Computador</div>
+      <div class="asignatura bloqueado" id="sistemas_info">Introducción a los Sistemas de Información</div>
+      <div class="asignatura bloqueado" id="lab4">Laboratorio IV</div>
+      <div class="asignatura bloqueado" id="prog3">Programación III</div>
+    </div>
+
+    <!-- Tercer Año -->
+    <div class="modulo" id="modulo5">
+      <h2>5to Módulo</h2>
+      <div class="asignatura bloqueado" id="lab5">Laboratorio V</div>
+      <div class="asignatura bloqueado" id="redes">Redes</div>
+      <div class="asignatura bloqueado" id="etica">Seminario de Ética y Deontología</div>
+      <div class="asignatura bloqueado" id="sistemas_op">Sistemas Operativos</div>
+    </div>
+
+    <div class="modulo" id="modulo6">
+      <h2>6to Módulo</h2>
+      <div class="asignatura bloqueado" id="config_soft">Configuración y Uso de Software</div>
+      <div class="asignatura bloqueado" id="lab6">Laboratorio VI</div>
+      <div class="asignatura bloqueado" id="practica">Práctica Profesional</div>
+      <div class="asignatura bloqueado" id="prog4">Programación IV</div>
+    </div>
+  </div>
+  <div class="leyenda">
+    <span class="color-morado"></span> Regulares
+    <span class="color-aprobado"></span> Aprobadas
+  </div>
+  <script src="../JS/script.js"></script>
+</body>
+
+</html>
